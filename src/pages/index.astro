@@ -1,5 +1,6 @@
 ---
-
+import Navbar from "../components/Navbar.astro";
+import "../styles/global.scss";
 ---
 
 <html lang="en">
@@ -8,9 +9,12 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<script
+			src="https://kit.fontawesome.com/7fc3e6ac51.js"
+			crossorigin="anonymous"></script>
+		<title>Not Gimprilep</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<Navbar />
 	</body>
 </html>
