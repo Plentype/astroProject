@@ -5,13 +5,14 @@
 <nav>
 	<a href="/">Дома</a>
 	<a href="/oglasna">Огласна табла</a>
-	<select name="raspored" id="raspored">
-		<option value="ucenici">Распоред за ученици</option>
-		<option value="profesori">Распоред за професори</option>
-		<option value="nedelen">
-			<a href="../../public/nedelen.pdf">Неделен распоред</a>
-		</option>
-	</select>
+	<div class="dropdown">
+		<button class="dropbtn"></button>
+		<div class="dropdown-content">
+			<a href="#">Распоред за ученици</a>
+			<a href="#">Распоред за професори</a>
+			<a href="#">Неделен распоред</a>
+		</div>
+	</div>
 	<a href="/cas_po">Час по..</a>
 	<a href="/arhiva">Архива</a>
 	<a href="/search">Пребарување</a>
@@ -19,13 +20,44 @@
 </nav>
 
 <style>
-	nav {
-		position: sticky;
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	.dropbtn {
+		background-color: #04aa6d;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+	}
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+
+		&:hover {
+			.dropdown-content {
+				display: block;
+			}
+			.dropbtn {
+				background-color: #000;
+			}
+		}
 	}
 
 	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+
+		a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			&:hover {
+				background-color: #ddd;
+			}
+		}
 	}
 </style>
