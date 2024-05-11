@@ -1,25 +1,29 @@
----
-
----
-
 <nav>
 	<a href="/">Дома</a>
-	<a href="/oglasna">Огласна табла</a>
 	<div class="dropdown">
 		<button class="dropbtn"></button>
 		<div class="dropdown-content">
-			<a href="#">Распоред за ученици</a>
-			<a href="#">Распоред за професори</a>
-			<a href="#">Неделен распоред</a>
+			<a href="../../public/raspored-ucenici.pdf">Распоред за ученици</a>
+			<a href="../../public/raspored-profesori.pdf">
+				Распоред за професори
+			</a>
+			<a href="../../public/nedelen.pdf">Неделен распоред</a>
 		</div>
 	</div>
 	<a href="/cas_po">Час по..</a>
-	<a href="/arhiva">Архива</a>
-	<a href="/search">Пребарување</a>
 	<a href="/contact">Контакт</a>
 </nav>
 
-<style>
+<style lang="scss">
+	nav {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
 	.dropbtn {
 		background-color: #04aa6d;
 		color: white;

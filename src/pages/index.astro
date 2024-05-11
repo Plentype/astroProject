@@ -1,6 +1,9 @@
 ---
-import Navbar from "../components/Navbar.astro";
 import "../styles/global.scss";
+import Navbar from "../components/Navbar.astro";
+import Homepage from "../components/Homepage.astro";
+import Articles from "../components/Articles.tsx";
+import AddStuff from "../components/AddStuff.tsx";
 ---
 
 <html lang="en">
@@ -16,5 +19,7 @@ import "../styles/global.scss";
 	</head>
 	<body>
 		<Navbar />
+		<Homepage />
+		<Articles client:visible />
 	</body>
 </html>

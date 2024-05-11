@@ -1,0 +1,29 @@
+$mainColor: hsl(354, 56%, 38%);
+$secondaryColor: #f7f7f7;
+
+.article-cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+	background-color: $mainColor;
+	border-radius: 10%;
+
+	color: $secondaryColor;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	margin: auto;
+	p {
+		width: 30ch;
+	}
+
+	img {
+		aspect-ratio: 4/3;
+		width: 10vw;
+	}
+}
